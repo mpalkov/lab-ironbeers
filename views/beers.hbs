@@ -1,7 +1,9 @@
-<h1>Beers1</h1>
+<h1>Beers</h1>
 {{#each beersFromApi}}
 <article>
+    {{#if this.image_url}}
     <img src="{{this.image_url}}" alt="{{this.name}}">
+    {{/if}}
     <h3>{{this.name}}</h3>
     <p>{{this.description}}</p>
 </article>
