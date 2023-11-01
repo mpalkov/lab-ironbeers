@@ -1,9 +1,6 @@
 <h1>Random Beer</h1>
 <article>
-    <img src="{{randomBeer.image_url}}" alt="{{randomBeer.name}}">
-    <h3>{{randomBeer.name}}</h3>
-    <p>{{randomBeer.tagline}}</p>
-    <p>{{randomBeer.description}}</p>
+    {{> beerpartial randomBeer}}
     <p>{{randomBeer.food_pairing}}</p>
     <p>{{randomBeer.brew_tips}}</p>
 </article>
